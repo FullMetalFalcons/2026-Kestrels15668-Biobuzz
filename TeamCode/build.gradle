@@ -19,6 +19,8 @@ apply from: '../build.dependencies.gradle'
 android {
     namespace = 'org.firstinspires.ftc.teamcode'
 
+
+
     packagingOptions {
         jniLibs.useLegacyPackaging true
     }
@@ -26,4 +28,6 @@ android {
 
 dependencies {
     implementation project(':FtcRobotController')
+    implementation 'com.pedropathing:ftc:2.1.2'        // your version
+    implementation 'com.pedropathing:telemetry:1.0.0'
 }
