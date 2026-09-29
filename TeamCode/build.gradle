@@ -19,7 +19,10 @@ apply from: '../build.dependencies.gradle'
 android {
     namespace = 'org.firstinspires.ftc.teamcode'
 
-
+    compileSdk 36
+    defaultConfig {
+        minSdk 24
+    }
 
     packagingOptions {
         jniLibs.useLegacyPackaging true
@@ -30,4 +33,5 @@ dependencies {
     implementation project(':FtcRobotController')
     implementation 'com.pedropathing:ftc:2.1.2'        // your version
     implementation 'com.pedropathing:telemetry:1.0.0'
+    implementation "com.bylazar:fullpanels:1.0.13"
 }

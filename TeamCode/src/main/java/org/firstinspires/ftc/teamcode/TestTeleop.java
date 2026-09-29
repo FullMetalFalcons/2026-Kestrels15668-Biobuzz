@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.bylazar.configurables.annotations.Configurable;
 import com.pedropathing.drivetrain.DrivePowers;
 import com.pedropathing.follower.Follower;
 import com.pedropathing.follower.ManualDrive;
@@ -13,6 +14,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 import org.firstinspires.ftc.teamcode.pedro.Constants;
 
+@Configurable
 @TeleOp (name = "Test Teleop")
 public class TestTeleop extends OpMode {
     Follower follower;
@@ -39,9 +41,9 @@ public class TestTeleop extends OpMode {
         launcher.update(1);
 
         // TELEMETRY
-        telemetry.addData("Robot X", robotPose.x());
-        telemetry.addData("Robot Y", robotPose.y());
-        telemetry.addData("Robot Heading", Math.toDegrees(robotPose.heading()));
+        telemetry.addData("X", robotPose.x());
+        telemetry.addData("Y", robotPose.y());
+        telemetry.addData("Heading", Math.toDegrees(robotPose.heading()));
 
         // UPDATE
         follower.update();
