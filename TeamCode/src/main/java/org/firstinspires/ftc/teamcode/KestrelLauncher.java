@@ -51,7 +51,7 @@ public class KestrelLauncher {
                 new PIDFCoefficients(launcher_p, 0, 0, launcher_f));
         headingPIDF.setCoefficients(turret_p,turret_i,turret_d,turret_f);
 
-        targetVelocity = distance * 2; // TODO tune ts equation
+        targetVelocity = 0;//distance * 2; // TODO tune ts equation
         if (isShooting) {
             motorLaunch.setVelocity(targetVelocity);
         } else {

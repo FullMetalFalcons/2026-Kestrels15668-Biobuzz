@@ -29,10 +29,10 @@ public class Constants {
     public static PinpointConfig localizerConfig = new PinpointConfig(
             c -> {
                 c.name.set("pinpoint");
-                c.xPodOffset.set(0.0);
-                c.yPodOffset.set(0.0);
+                c.xPodOffset.set(-5.51177863558);
+                c.yPodOffset.set(2.33294452);
                 c.xPodDirection.set(GoBildaPinpointDriver.EncoderDirection.FORWARD);
-                c.yPodDirection.set(GoBildaPinpointDriver.EncoderDirection.FORWARD);
+                c.yPodDirection.set(GoBildaPinpointDriver.EncoderDirection.REVERSED);
             }
     );
     public static ForesightConfig foresightConfig = new ForesightConfig(
